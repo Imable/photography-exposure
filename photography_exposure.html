@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Participators: Abel van Beek		Candidate 143
+						Rune Andersland		Candidate 150 
+	-->
+	<!-- Tasks: 		Texts	  |    Originally by Rune Andersland	|	Adaptations by Abel van Beek. 
+						Structure |	   By Abel van Beek
+						Code	  |	   By Abel van Beek
+						Images    |    By Abel van Beek 
+	-->
+    <head>
+		<meta charset="utf-8">
+		<title>Photography Exposure</title>
+		<link rel="icon" type="image/png" href="images/fav.png"/>
+		<link rel="stylesheet" type="text/css" href="styles/main_style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	
+	<body>
+	    <header id="top">
+			<a href="#top"><h1>Photography Exposure</h1></a>
+
+			<input type="checkbox" name="toggle_photo" id="toggle_photo_home">
+			<label for="toggle_photo_home">Toggle Photo</label>
+
+			<p>
+				Four simple, yet in-depth explanations that will teach you the fine art of photography expose. 
+				That is what Photography Exposure offers. These topics include ISO, aperture, shutter speed and focus. 
+				Mastering all four enables you to not only take pictures, but make your pictures into pieces of art.
+				For each respective topic we elaborate on the mechanics of said aspect and what can achieved when putting
+				that aspect to good use. The achieved effect has been captured in the background images.
+			</p>
+	        <nav id="main_navigation">
+	            <ul>
+	                <li>
+	                    <a href="#iso">ISO</a>
+					</li>
+					<li>
+						<a href="#aperture">Aperture</a>
+					</li>
+	                <li>
+	                    <a href="#shutter_speed">Shutter</a>
+	                </li>
+	                <li>
+						<a href="#focus">Focus</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+	            </ul>
+			</nav>
+			
+			<img src="images/home/home.jpg" alt="Photo of a back alley with underexposed foreground and well-exposed background and sky." class="background">
+		</header>
+
+		<div id="buttons">
+			<button type="button" onclick="location.href='#top'" class="hidden">To the top</button>
+			<button type="button" onclick="next_article()" id="next_article" class="hidden">Next article</button>
+		</div>
+	    
+	    <main>
+			<div id="container">
+				<section>
+					<h2>ISO</h2>
+
+					<input type="checkbox" name="toggle_photo" id="toggle_photo_iso">
+					<label for="toggle_photo_iso">Toggle Photo</label>
+
+					<article id="iso_definition">
+						<h3>Definition</h3>
+						<p>
+							The <i>ISO</i> setting controls how <i>light-sensitive</i> a camera is. Every dedicated camera has the option to set the ISO. 
+							Often, this number remains on <i>auto</i>-mode or is set once and not changed. The experienced photographer uses ISO to make his photographs 
+							extra sharp of give it a sense of age. Most important of all, ISO can be used to extract as much light as possible from a scene.
+							The are some drawbacks to pulling this <i>articifial</i> light out of a scene. Most notably, <i>distortion</i> will find its way into the photograph.
+						</p>
+						<img src="images/iso/definition.jpg" alt="Photo of an industrial pipe coming out of an old building." class="background">
+					</article>
+
+					<article id="iso_scaling">
+						<h3>Scaling</h3>
+						<p>
+							ISO scales differently than a normal one-to-ten scale. The lowest ISO number is 100. At this setting, photos are crisp and contain little to no <i>distortion</i>. 
+							Every step ISO is increased, the ISO number is doubled. This results in a scale as the following: 100, 200, 400, 800, 1600, 3200 etcetera. Each step makes the sensor twice as sensitive to light as the previous. 
+							To a certain extend, turning up the ISO has only benefits, especially when the light is lacking. However, ISO alone can not save a photograph from darkness.
+						</p>
+						<img src="images/iso/scale.jpg" alt="Photo of lanterns on the side of a building with differnt intensities." class="background">
+					</article>	
+					
+					<article id="iso_distortion">
+						<div class="multi_article">
+							<section>
+								<h3>Distortion: noise</h3>
+								<p>
+									Noise is interconnected to ISO. Noise itself is an effect on photos where random pixels in an area are lit up. 
+									A good description of the visual effect is a white-noise background that is always in the background of the photo. 
+									This effect can come from two things, either the camera settings or the photo itself. These are called digital noise and shot noise respectively.
+								</p>
+							</section>
+							<section>
+								<h3>Distortion: grain</h3>
+								<p>
+									Grain is the size of pixels in a photo. For example, with a phone camera zoomed all the way in, the picture quickly becomes grainy, as the size of the pixels increase. 
+									This is called a digital zoom. However, in a camera lense, the glass lenses are moved further or closer to each other. 
+									This creates the optical effect of a zoom, where the pixel size remains untouched. When the grain/pixel size stays the same, the zoom is optical. 
+									Thus, grain is not related to ISO, but the amount of grain is influenced by the amount of light available.
+								</p>
+							</section>
+						</div>
+
+						<img src="images/iso/distortion.jpg" alt="Photo of a railway full of digital noise." class="background">
+					</article>	
+
+					<article id="iso_noise">
+						<div class="multi_article">
+							<section>
+								<h3>Shot Noise</h3>
+								<p>
+									If the noise comes from the photo, the effect is called <i>shot noise</i>. If a landscape is photographed twice in a row, the two photos will not have the same amount of light in them. 
+									This is caused by how photons work, where they are reflected off objects at different rates. Of course, this difference in light is impossible to trace with the human eye. 
+									However, it is exactly this difference that causes shot noise. The only way to remedy shot noise in photography is to have more light in your photos. 
+									Perhaps waiting for some clear skies for a landscape photo, or pulling away the curtains to light up a portrait photo. 
+									Messing with the ISO setting has little effect on this type of noise, as the camera cannot create light where there is a lack of it.				
+								</p>
+							</section>
+							<section>
+								<h3>Digital Noise</h3>
+								<p>
+									If the noise comes from what camera settings were used when taking a photo, the effect is called <i>digital noise</i>. Digital noise is the main worry when increasing ISO. 
+									This is the kind of noise that will always be in the background of photos, no matter how good the camera is. 
+									An easy way to see this background is to take a photo with the lens cap on. If the ISO is low enough, this photo turns out completely dark. 
+									However, turn the ISO up, and suddenly the image is filled with randomly coloured pixels.
+								</p>
+							</section>
+						</div>
+						<img src="images/iso/noise.jpg" alt="Photo of a back alley full of shot noise." class="background">
+					</article>
+
+					<!-- Sadly, to make the sliding work (with the introduction appearing when there is no target), 
+						 the introduction had to be on the bottom. CSS only knows that there is no target once it has
+						 reached the bottom. This does not benefit the accessibility at all, since screen readers
+						 will read this introduction at the end. -->
+					<article id="iso">
+						<h3>Introduction to ISO</h3>
+						<p>
+							With a good use of ISO, poorly lit environments should not be a problem anymore. By using ISO, the light sensitivity of the image sensor can be
+							influenced. There are some drawbacks however. A too low ISO will result in an underexposed photograph and too high ISO will result in a distored
+							or overexposed image. Yet, to a certain extend ISO can provide a way out in dark environments.
+						</p>
+						<img src="images/iso/home.jpg" alt="Photo of a shelf in a cigar shop." class="background">
+					</article>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="#iso">Introduction</a>
+							</li>
+							<li>
+								<a href="#iso_definition">Definition</a>
+							</li>
+							<li>
+								<a href="#iso_scaling">Scaling</a>
+							</li>
+							<li>
+								<a href="#iso_distortion">Distortion</a>
+							</li>
+							<li>
+								<a href="#iso_noise">Noise</a>
+							</li>
+						</ul>
+					</nav>
+				</section>
+
+				<section>
+					<h2>Aperture</h2>
+
+					<input type="checkbox" name="toggle_photo" id="toggle_photo_aperture">
+					<label for="toggle_photo_aperture">Toggle Photo</label>
+
+					<article id="aperture_definition">
+						<h3>Definition</h3>
+						<p> 
+							When changing the aperture setting, the camera changes the opening of the lens. The more light is let into the lens at once, the faster a photograph
+							will overexpose. Aperture also controls the <i>depth of field</i>. Depth of field is the <i>z-depth</i> that will actually be in focus. With a high
+							aperture, the z-depth is very wide, resulting in a photograph where everything is in focus. A low aperture will result in a very narrow depth of field,
+							allowing the photographer to only focus on one specific element of the object that he is photographing. Usually, aperture is the first setting that will
+							be fixed. Afterwards, using the other mechanics described, the real exposure of the photo is regained.
+						</p>
+						<img src="images/aperture/definition.jpg" alt="Photo of large Christmas wreaths above eachother, resembling a Christmas tree." class="background">
+					</article>
+
+					<article id="aperture_mechanics">
+						<h3>Mechanics</h3>
+						<p>
+							The actual aperture lies inside the lens of a camera. It regulates how wide the shutter of the lens will actually open. 
+							The closing sheet itself is often a five-plate mechanism that closes up to form a pentagon-shaped hole. It is also called the <i>f-stop</i>. The f-stop has no metric or imperial equivalent. 
+							This is because the f-stop has to do with <i>correlations</i> between how much light is let onto the camera sensor and how physically wide the aperture opening is. 
+							While the mathematics behind this correlation is quite complex, there is a general rule of thumb that is easy to remember. 
+							For every step down the f-stop ladder, the <i>shutter speed</i> can be 25% faster than for the previous f-stop to keep the same <i>exposure</i>. 						
+						</p>
+						<img src="images/aperture/mechanics.jpg" alt="Out of focus photo of light in the dark. The blown out lights are perfectly round." class="background">
+					</article>
+
+					<article id="aperture_exposure">
+						<h3>Exposure</h3>
+						<p>
+							If the aperture is wide, then more light is let into the photograph. A <i>narrower</i> aperture lets less light in. It is this mechanic that makes aperture and shutter speed 
+							the two main ways to control exposure. If you increase the shutter speed, letting less light in, increasing the aperture will increase the light level nicely and vice versa. 
+							Oddly enough, if the aperture is really wide, the f-stop number is really low. An example: f/1.8 is very wide open. On the other end of the spectrum, if the aperture is very narrow,
+							the f-stop is really high. An example: f/22 makes the pentagon opening really small and not a lot of light is onto the lens. 						
+						</p>
+						<img src="images/aperture/exposure.jpg" alt="Photo of a roof with the night sky. Both are well-exposed." class="background">
+					</article>	
+					
+					<article id="aperture_dof">
+						<h3>Depth of Field</h3>
+						<p>
+							Depth of field is also important an important aspect of aperture. For example, if a photo of a bridge with a beautiful skyline has an aperture of <i>f/22</i> then the entire image is crisply in focus. 
+							Everything from the railing on the bridge, to the tips of the skyscrapers in the distance. Leaving the focus on the bridge, but changing the f-stop to <i>f/1.8</i>. 
+							Then, the only thing that will be in focus is the first few millimeters of the railing. Anything else either in front or behind the bridge is way out of focus. 
+							This makes depth of field a powerful tool to lead the eye of whoever is looking at the photo. If the photographer wants the eye to wander around the image, soaking in details, a higher aperture makes this goal easy to achieve. 						
+						</p>
+						<img src="images/aperture/dof.jpg" alt="Close-up photo of a plant with a very blown out mountain in the background." class="background">
+					</article>
+
+					<article id="aperture">
+						<h3>Introduction to Aperture</h3>
+						<p>
+							Aperture is a very versatile setting on modern camera´s. It can not only be used to adjust exposure, but also to alter the depth of field.
+							Opening up the shutter with a low ISO too far will result in an overexposed image. Having a too narrow opening with a high ISO will result in
+							very little light hitting the image sensor. It is a matter of finding the balance between the depth of field you are trying to achieve and 
+							still managing to keep the exposure at bay.
+						</p>
+						<img src="images/aperture/home.jpg" alt="Photo of a latern along the pole on which the latern is attached." class="background">
+					</article>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="#aperture">Introduction</a>
+							</li>
+							<li>
+								<a href="#aperture_definition">Definition</a>
+							</li>
+							<li>
+								<a href="#aperture_mechanics">Mechanics</a>
+							</li>
+							<li>
+								<a href="#aperture_exposure">Exposure</a>
+							</li>
+							<li>
+								<a href="#aperture_dof">DoF</a>
+							</li>
+						</ul>
+					</nav>
+
+				</section>
+
+				<section>
+					<h2>Shutter Speed</h2>
+
+					<input type="checkbox" name="toggle_photo" id="toggle_photo_shutter_speed">
+					<label for="toggle_photo_shutter_speed">Toggle Photo</label>
+
+					<article id="shutter_speed_definition">
+						<h3>Definition</h3>
+						<p>
+							Shutter speed is the duration of the light actually hitting the image sensor. A longer shutter speed allows for movement to happen while the camera is
+							capturing the actual photo. This results in a photograph that contains blur. On the other hand, a very fast shutter speed only captures light for a very small
+							fraction of a second, resulting in an image that does not contain any blur at all. The sound a camera makes when actually taking a photograph is also tied to
+							shutter speed. That is namely the shutter of the camera opening and closing.
+						</p>
+						<img src="images/shutter_speed/definition.jpg" alt="Photo of a railway with motion blur. Taken from the train while driving." class="background">
+					</article>
+
+					<article id="shutter_speed_mechanics">
+						<h3>Mechanics</h3>
+						<p>
+							Understanding the mechanics is an important first step. There is a physical piece in motion in the lens called the shutter. 
+							The name <i>shutter</i> comes from its function, which is to stay shut and keep the light out of the <i>image sensor</i>.
+							Whenever the photographer takes a photo, the shutter opens and closes. The duration of being open, depends on the shutter speed. 
+							This setting is measured in seconds, or fractions of a second for that matter. A really fast shutter speed setting is for example <i>1/2000</i>, which is one two-thousandth of a second. 
+							On the other side of the spectrum, a slow shutter speed photo can be anything from a few seconds to minutes.
+							The shutter is visible when one looks through the lens while a photograph is taken.				
+						</p>
+						<img src="images/shutter_speed/mechanics.jpg" alt="Photo of an escalator with motion blur." class="background">
+					</article>
+
+					<article id="shutter_speed_freezing">
+						<h3>Freezing Time</h3>
+						<p>
+							A fast shutter speed will only let in light for a split second, which causes the image to often be a little on the dark side.
+							However, this is a minor inconvenience, since other camera settings easily remedy the lack of light. What most high shutter speed photographers are after, is the freezing effect. 
+							With a fast shutter speed, a photographer can catch things the human eye misses. For example, a fast enough shutter speed can freeze a hummingbird's wings mid-flight or make individual water drops in a wave visible.						
+						</p>
+						<img src="images/shutter_speed/freezing.jpg" alt="Photo of a car driving by. The car is very sharp and as it were 'stopped in time'" class="background">
+					</article>
+
+					<article id="shutter_speed_everflowing">
+						<h3>Everflowing Time</h3>
+						<p>
+							A slow shutter speed can be anything from a few seconds to minutes. When the shutter speed is open for this long, anything that moves within the photo will be blurred. 
+							For example, taking a long shutter speed photo of moving traffic will show the headlights of cars as lines of light moving through the image. 
+							As with fast shutter speed photos, these images are also impossible to see with the human eye. When taking these <i>long exposure</i> pictures, it is
+							important to make use of a tripod, since any hand shake will also show in the photograph.			
+						</p>
+						<img src="images/shutter_speed/everflowing.jpg" alt="Photo of a car driving by with long exposure, creating a light trail." class="background">
+					</article>	
+
+					<article id="shutter_speed">
+						<h3>Introduction to Shutter Speed</h3>
+						<p>
+							Shutter speed is theoretically easy to master, but in practice it is difficult to get right. A too fast shutter speed will result in a very dark image,
+							a too long shutter speed (without taking other measures) will lead to an overexposed image. That said, with a fast and a slow shutter speed, one can
+							create very pleasing effects, such as light trails or crisp water drops. A tripod is recommended before trying your hands on long exposure photography, since
+							any handshake will show in those photographs.
+						</p>
+						<img src="images/shutter_speed/home.jpg" alt="Photo from a back alley. The foreground is solely a silhoutte of buildings. The background is well-exposed." class="background">
+					</article>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="#shutter_speed">Introduction</a>
+							</li>
+							<li>
+								<a href="#shutter_speed_definition">Definition</a>
+							</li>
+							<li>
+								<a href="#shutter_speed_mechanics">Mechanics</a>
+							</li>
+							<li>
+								<a href="#shutter_speed_freezing">Freezing</a>
+							</li>
+							<li>
+								<a href="#shutter_speed_everflowing">Everflowing</a>
+							</li>
+						</ul>
+					</nav>
+
+				</section>
+
+				<section>
+					<h2>Focus</h2>
+
+					<input type="checkbox" name="toggle_photo" id="toggle_photo_focus">
+					<label for="toggle_photo_focus">Toggle Photo</label>
+
+					<article id="focus_definition">
+						<h3>Definition</h3>
+						<p>
+							Focus is not a way to control exposure, but it can play a role in doing so. Focus is all about guiding the eye where you want it to go. This is done with varying techniques, 
+							from placing the main object along the golden rectangle to thinking about where the lines in your photo lead. Connecting this to exposure is the fact that out of focus elements
+							tend to get overexposed quickly. When the photographer is aware of this technique, great compositions can be made.
+						</p>
+						<img src="images/focus/definition.jpg" alt="Out of focus photo of lights." class="background">
+					</article>
+
+					<article id="focus_golden_rectangle">
+						<h3>Golden Rectangle</h3>
+						<p>
+							Imagine that the four corners of a photo all have lines that point to the middle of the photo. 
+							About halfway along these lines are the four corners of the golden rectangle. The human eye will often catch what is along these corners first of all. 
+							This is why you rarely see photos where the main object is in the exact middle. Most of the time photographers place their objects of focus slightly to the right or left. 
+							While this is mostly a good rule a thumb, an easy mistake to make is placing something in each of the four corners. This can quickly clutter the photo, making it hard to know what to really focus on.						
+						</p>
+						<img src="images/focus/rectangle.jpg" alt="Photo of the corner of a fancily decorated frame of a poster." class="background">
+					</article>
+
+					<article id="focus_placement">
+						<h3>Placement</h3>
+						<p>
+							While the golden rectangle works in two dimensions (height and length), photography can also create the illusion of a third dimension, depth. This is done by seperating a clear fore-, middle- and background. 
+							Imagine a photo of a gravel road, heading into a misty forest. On each side of the road are tall overhanging trees, nearly making it a tunnel. 
+							Now, while this is on a flat surface, many would say that they sense a physical depth. The focus itself is probably halfway along the road, along with some trees and branches along the sides. 
+							This is the “middle” ground, because there is space in the photo both in front of and behind. As for the foreground and background, they are both fading out of focus. 
+							This truly creates an illusion of depth, making it seem like the road goes on forever.						
+						</p>
+						<img src="images/focus/placement.jpg" alt="Photo of a hanging lock where the background is blown out." class="background">
+					</article>	
+					
+					<article id="focus_lines">
+						<h3>Lines</h3>
+						<p>
+							Lines always play a role in well-compositioned photographs. The goal of using lines can be many things, such as leading eyes, creating patterns or segmentation within a photograph. 
+							A simple example of creating lines is of a person pointing with their hand and arm to the object of focus. Not only is the action of pointing a socially accepted action of moving 
+							our attention somewhere else, but the arm itself is a straight line that lead our eyes in the wanted direction.						
+						</p>
+						<img src="images/focus/lines.jpg" alt="Photo of a large, round, hanging ornament. Taken from right underneath it, shot straight up." class="background">
+					</article>	
+
+					<article id="focus">
+						<h3>Introduction to Focus</h3>
+						<p>
+							Focus is about finding the eyecatcher from where we lead the viewer around our photograph. Although focus seems easy to comprehend, it can be difficult to get right.
+							One can opt for <i>auto</i>-focus and loose control or one can choose for manual focus, but cope with the risk of missing the focus. That said, a photographer can also
+							choose to have the whole photo out of focus. There is no wrong way to handle focus, but you should be aware of the means necessary to reach your goal.
+						</p>
+						<img src="images/focus/home.jpg" alt="Photo of a rain gutter of an old building. Shot straight up along the pipe." class="background">
+					</article>
+
+					<nav>
+						<ul>
+							<li>
+								<a href="#focus">Introduction</a>
+							</li>
+							<li>
+								<a href="#focus_definition">Definition</a>
+							</li>
+							<li>
+								<a href="#focus_golden_rectangle">Rectangle</a>
+							</li>
+							<li>
+								<a href="#focus_placement">Placement</a>
+							</li>
+							<li>
+								<a href="#focus_lines">Lines</a>
+							</li>
+						</ul>
+					</nav>
+
+				</section>
+	
+			</div>
+	    </main>
+	    
+	    <footer id="contact">
+			<h2>Contact</h2>
+
+			<input type="checkbox" name="toggle_photo" id="toggle_photo_contact">
+			<label for="toggle_photo_contact">Toggle Photo</label>
+
+			<article>
+				<div class="multi_article">
+					<section>
+						<h3>Abel van Beek</h3>
+						<p>
+							Abel built this website from the ground up. He is responsible for the HTML and CSS code, the design of Photography Exposure and for taking 
+							all the photographs on this site. He made adaptions to the paragraphs written by Rune Andersland to make them suit better to the 
+							renewed design.
+						</p>
+						<a href="mailto:abel@photographyexposure.fake?Subject=Photography%20Exposure">Get in touch with Abel van Beek</a>
+					</section>
+					<section>
+						<h3>Rune Andersland</h3>
+						<p>
+							Rune wrote the basis for all the paragraphs as they stand right now. On top of that, he made intelligent use of HTML tags to give the
+							texts even more semantic meaning. Thereafter, he implemented them in seperate HTML files that had been prepared by Abel.
+						</p>
+						<a href="mailto:rune@photographyexposure.fake?Subject=Photography%20Exposure">Get in contact with Rune Andersland</a>
+					</section>
+				</div>
+			</article>
+			
+			<img src="images/contact/home.jpg" alt="Photo of and old, rusty pipe attached to a building." class="background">
+	    </footer>
+	</body>
+</html>
